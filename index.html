@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title>SpaceInv</title>
+
+    <script src="sketch.js"></script>
+    <script src="logo.js"></script>
+    <script src="stuff.js"></script>
+    <script src="line.js"></script>
+    <script src="move.js"></script>	
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+    <body id="bod1" onkeydown="moveShip()" onclick="more()" >
+  <canvas id="can1" width="800" height="500" >A CANVAS</canvas>
+   <img id="pic1" src="cowpic2.jpg" >
+   <img id="pic2" src="cowpic5.jpg">
+  <input type="button" id="but1" value="click to run" onclick="startInt()">
+  <input type="button" id="but2" value="clear Canvas" onclick="stopInt()">
+  <p id="par1">B</p>
+  <p id="par3">what???</p>
+</body>
+
+<script>
+let total=2;let keyShip='a';
+let ship1=new SpaceShip(400,450,5);
+let str="B";
+let bullits=[];let invaders=[];let cnt=0;
+let catchShip=[];
+let t=new logo(300,100,0,"can1","red",1);
+let t1=new logo(200,200,0,"can1","blue",1);
+let gameStart;  
+ /*document.getElementById("inp1").addEventListener("keyup", func2);
+ */
+ 
+ for(let j=0;j<total;j++){//starting with two spaceships
+ invaders[j]=new Invader(50+30*j,50+20*j,-8+Math.random()*16,-8+Math.random()*1);
+ }
+ 
+ 
+
+</script>
+ 
+
+</html>
