@@ -1,12 +1,12 @@
-#can1{border:red double 10px;}
+//#can1{border:red double 10px;}
 
-#but1{position:absolute;left:850px;top:50px;border:green solid 5px;}
-#but2{position:absolute;left:850px;top:100px;border:green solid 5px;}
+#but1{position:absolute;left:50px;top:50px;border:green solid 5px;}
+#but2{position:absolute;left:50px;top:100px;border:green solid 5px;}
 
 #par1{position:absolute;left:-50px;top:-50px;border:green solid 5px;width:10px;height:30px;}
 
 #pic1{position:absolute;left:-150px;top:-150px;width:50px;height:50px;}
 
-#pic2{position:absolute;left:400px;top:450px;width:80px;height:40px;}
+#pic2{position:absolute;left:400px;top:450px;width:60px;height:40px;}
 
-#pic3{position:absolute;left:150px;top:450px;width:80px;height:40px;}
+#pic3{position:absolute;left:400px;top:450px;width:10px;height:20px;}

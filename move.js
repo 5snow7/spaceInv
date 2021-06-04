@@ -1,21 +1,16 @@
 
 class Bullit{
-   constructor(x,y,yv,str){
+   constructor(x,y,yv){
    this.x=x;this.y=y;this.yv=yv;
-   let par=document.getElementById("par1");
-   this.p=par.cloneNode(true);
+   let pic=document.getElementById("pic3");
+   this.p=pic.cloneNode(true);
    document.getElementById("bod1").appendChild(this.p);
    
-   this.p.innerHTML=str;
    }	   	   
 	
-   move(){
-	this.y=this.y-this.yv; 
-	}
+   move(){this.y=this.y-this.yv; }
    
-   chbd(){
-  if(this.y<20){return true;}
-	      }
+   chbd(){if(this.y<20){return true;}}
    
    display(){
    this.p.style.left=this.x+"px";
@@ -29,12 +24,10 @@ class Invader{
    let pic=document.getElementById("pic1");
    this.p=pic.cloneNode(true);
    document.getElementById("bod1").appendChild(this.p);
-   
    }	   	   
 	
-   move(){this.x=this.x+this.xv;
-	this.y=this.y+this.yv; 
-}
+   move(){this.x=this.x+this.xv;this.y=this.y+this.yv; }
+  
   chbd(){
 	   if(this.x<0||1000<this.x){this.xv=-1*this.xv;}
 	   if(this.y<0||500<this.y){this.yv=-1*this.yv;}
@@ -45,12 +38,13 @@ class Invader{
    this.p.style.top=this.y+"px";
    }
 
-}//end of classs
+}//end of invader class
 
 class SpaceShip{
 	
 constructor(x,y,inc){this.x=x;this.y=y;this.inc=inc;
-this.ship=document.getElementById("pic2");}
+this.ship=document.getElementById("pic2");
+}
 
 moveL(){this.x=this.x-this.inc;}
 moveR(){this.x=this.x+this.inc;}

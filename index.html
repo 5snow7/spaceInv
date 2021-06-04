@@ -18,10 +18,10 @@
   <canvas id="can1" width="800" height="500" >A CANVAS</canvas>
    <img id="pic1" src="cowpic2.jpg" >
    <img id="pic2" src="cowpic5.jpg">
+   <img id="pic3" src="cowpic4.jpg">
   <input type="button" id="but1" value="click to run" onclick="startInt()">
   <input type="button" id="but2" value="clear Canvas" onclick="stopInt()">
   <p id="par1">B</p>
-  <p id="par3">what???</p>
 </body>
 
 <script>
@@ -36,7 +36,7 @@ let gameStart;
  /*document.getElementById("inp1").addEventListener("keyup", func2);
  */
  
- for(let j=0;j<total;j++){//starting with two spaceships
+ for(let j=0;j<total;j++){//starting with two invaders
  invaders[j]=new Invader(50+30*j,50+20*j,-8+Math.random()*16,-8+Math.random()*1);
  }
  
